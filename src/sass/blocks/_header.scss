@@ -1,0 +1,71 @@
+.header {
+    position: relative;
+    &__navi {
+        background-color: rgb(44, 44, 44, 0.8);
+        min-height: 80px;
+        width: 100%;
+        padding: 10px 30px;
+        position: fixed;
+        
+        .container {
+            min-width: 950px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__image{
+        
+        width: 40px;
+        height: 40px;
+        
+        background-color: gray;
+        border: 2px solid gray;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            color: white;
+            font-size: 35px;
+        }
+        
+        
+    }
+    &__logo {
+        margin-left: 5px;
+        width: 130px;
+        text-align: center;
+    }
+    &__link {
+        font-size: 22px;
+        line-height: 22px;
+        font-weight: 300;
+        color: $text_color;
+        
+        text-decoration: none;
+        &:hover {
+            color: #fff;
+        }
+    }
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-left: 20px;
+        list-style: none;
+        &__link {
+            color: $text_color;
+            font-size: 20px;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 300;
+            &:hover {
+                color: #fff;
+                text-shadow: 3px 3px 10px white;
+            }
+        }
+    }
+    
+}

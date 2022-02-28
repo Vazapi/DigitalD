@@ -1,0 +1,49 @@
+.description {
+    padding: 50px 30px;
+    background: linear-gradient(-45deg, rgb(224, 224, 224), rgb(255, 255, 255));
+    &__wrapper {
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    &__image {
+        width: 30px;
+        border-radius: 100%;
+        margin-left: 15px;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 3px 3px 3px black;
+        }
+        img {
+            
+            width: 100%;
+            
+        }
+    }
+    &__title {
+        font-size: 34px;
+        margin: 0;
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__reason {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 500px;
+        &-tit {
+            text-align: center;
+            font-size: 24px;
+        }
+        &-list {
+            padding: 0;
+            margin-top: 20px;
+            
+        }
+    
+    }
+
+    
+}
