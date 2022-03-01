@@ -1,5 +1,5 @@
 .download {
-    min-height: 500px;
+    min-height: 450px;
     padding: 50px 30px;
     background: linear-gradient(-45deg, rgb(224, 224, 224), rgb(255, 255, 255));
     &__title {
@@ -14,18 +14,21 @@
     }
     &__wrapper {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
     &__item {
-        width: 500px;
+        width: 450px;
+        height: 300px;
         border: 2px solid rgba(87, 26, 26, 0.2);
-        margin: 10px 0;
+        margin: 10px 10px;
     }
     &__image {
         width: 100%;
+        height: 100%;
         img {
             width: 100%;
+            height: 100%;
         }
     }
     &__link {

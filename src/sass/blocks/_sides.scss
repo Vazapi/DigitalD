@@ -1,10 +1,11 @@
 .sides {
-    padding: 50px 30px 50px 30px;
+    padding: 40px 30px 40px 30px;
     min-height: 400px;
      background: url('./../image/bg/bg gray.jpg') center (center/cover) no-repeat;
     
     &__wrapper {
         display: flex;
+        
         justify-content: space-around;
     }
     &__plus {
@@ -17,11 +18,11 @@
             &:before {
                 content: '';
                 position: absolute;
-                left: -29px;
-                top: 10px;
-                width: 18px;
+                left: -28px;
+                top: 9px;
+                width: 16px;
                 height: 2px;
-                background-color: rgba(216, 40, 40, 0.7);
+                background-color: rgba(255, 255, 255);
             }
             &:after {
                 content: '';
@@ -29,8 +30,8 @@
                 left: -21px;
                 top: 2px;
                 width: 2px;
-                height: 18px;
-                background-color: rgba(216, 40, 40, 0.7);
+                height: 16px;
+                background-color: rgba(255, 255, 255);
             }
         }
     }
@@ -46,13 +47,18 @@
                 position: absolute;
                 left: -29px;
                 top: 10px;
-                width: 18px;
+                width: 16px;
                 height: 2px;
-                background-color: rgba(216, 40, 40, 0.7);
+                background-color: rgba(255, 255, 255);
             }
         }
     }
     &__title {
+        color: $text_color;
+        font-size: 34px;
+        text-align: center;
+    }
+    &__head {
         font-size: 24px;
         color: $text_color;
     }

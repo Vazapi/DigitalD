@@ -9,16 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-            <nav class="header__navi">
+            <nav class="header__navi" id="#top">
                 
                 <div class="container">
                     <div class="header__image">
                         
-                        <i class="fa-solid fa-globe"></i>
+                        <span class="icon-sphere"></span>
                     </div>
                     <div class="header__logo">
                         <a href="https://developer.mozilla.org/ru/docs/Web" class="header__link" target='_blank'>Web Technology</a>
@@ -32,18 +33,21 @@
                             <li><a href="#download"  class="header__list__link">Установка</a></li>
                         </ul>
                     </div>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
                 </div>
                 
             </nav>
     </header>
-    <section class="subheader">
+    <section class="introduction">
         <div class="container">
-            <div class="subheader__text">
+            <div class="introduction__text">
                 <a name="introduction"></a>
-                <h1 class="subheader__title">
+                <h1 class="introduction__title">
                     Введение
                 </h1>
-                <p class="subheader__descr">
+                <p class="introduction__descr">
                     Современные веб-технологии предоставляют разработчикам неограниченные возможности для реализации своих идей. Для того, чтобы вы могли использовать весь их потенциал, необходимо знать как правильно их использовать. Здесь мы рассмотрим Gulp 
                 </p>
 
@@ -57,7 +61,9 @@
             <div class="description__wrapper">
                 
                 <h2 class="description__title">Gulp</h2>
-                <a href="https://gulpjs.com/"><img src="image/icons/gulp-seeklogo.com.svg" class="description__image" alt=""></a>
+                <a href="https://gulpjs.com/" target='_blank'>
+                    <img  src="image/icons/gulp-seeklogo.com.svg"  class="description__image" alt="logo-gulp">
+                </a>
             </div>
             
             <div class="description__subtitle" for="history">
@@ -73,6 +79,7 @@
                     <li>Использует SASS и LESS в качестве CSS-препроцессора.</li>
                     <li>Автоматически обновляет страницу после редактирования исходных файлов.</li>
                     <li>Легко понять и создать Gulpfile.js, потому что он использует чистый код JavaScript для построения задачи.</li>
+                    
                 </ol>
             </div>
         </div>
@@ -80,10 +87,11 @@
 
     <section class="sides">
         <div class="container">
+            <h2 class="sides__title">Достоинства и недостатки</h2>
             <div class="sides__wrapper">
                 <a href="#" name="sides_p"></a>
                 <ul class="sides__plus">
-                    <div class="sides__title">Плюсы:</div>
+                    <div class="sides__head">Плюсы:</div>
                     <li>Огромное преимущество в скорости перед любым другим бегущим заданием</li>
                     <li>Легко кодировать и понимать.</li>
                     <li>Легко тестировать веб-приложения.</li>
@@ -93,7 +101,7 @@
                 </ul>
                 <a href="#" name="sides_m"></a>
                 <ul class="sides__minus" >
-                    <div class="sides__title">Минусы:</div>
+                    <div class="sides__head">Минусы:</div>
                     <li>Больше количества зависимостей и является новичком по сравнению с Grunt.</li>
                     <li>Используя плагины Gulp, вы не можете выполнять несколько задач.</li>
                     <li>Конфигурация не так чиста, как Grunt.</li>
@@ -113,11 +121,11 @@
             <div class="download__wrapper">
                 <div class="download__item">
                     <a href="https://nodejs.org/ru/" target="_blank" class="download__link download__link-node">Установщик Node.js</a>
-                    <div class="download__image"><img src="image/node js.jpg" alt=""></div>
+                    <div class="download__image"><img src="image/node js.jpg" alt="screen_node_js_page"></div>
                 </div>
                 <div class="download__item">
                     <a href="https://gulpjs.com/docs/en/getting-started/quick-start" target="_blank" class="download__link download__link-gulp">Инструкция Gulp</a>
-                <div class="download__image"><img src="image/gulp screen.jpg" alt=""></div>
+                <div class="download__image"><img src="image/gulp screen.jpg" alt="screen gulp_page"></div>
                 </div>
                 
                 
@@ -127,14 +135,31 @@
     </section>
     <footer class="footer">
         <div class="container">
+            <div class="footer__text">Мы в соцсетях:</div>
             <div class="footer__social">
-                <a href="" class="footer__link"><li><i class="fa-brands fa-facebook-f"></i></li></a>
-                <a href="" class="footer__link"><li><i class="fa-brands fa-vk"></i></li></a>
-                <a href="" class="footer__link"><li><i class="fa-brands fa-instagram"></i></li></a>
+                <a href="https://www.facebook.com/" target="_blank" class="footer__link">
+                    <li>
+                    <span class="icon-facebook"></span>
+                    </li>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="footer__link">
+                    <li>
+                        <span class="icon-instagram"></span>
+                    </li>
+                </a>
+                <a href="https://vk.com/" target="_blank" class="footer__link">
+                    <li>
+                        <span class="icon-vk"></span>
+                        </i>
+                    </li>
+                </a>
             </div>
         </div>
     </footer>
+    <a class="button__up" href="#top">
+        <span class="icon-arrow-up2"></span>
+    </a>
     <script src="js/script.js"></script>
-    <script src="https://kit.fontawesome.com/750898171c.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>
